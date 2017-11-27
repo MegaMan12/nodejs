@@ -1,3 +1,6 @@
+
+
+//Sendgrid Code
 var sendgrid = require("sendgrid")("SENDGRID_APIKEY");
 var email = new sendgrid.Email();
 
@@ -9,8 +12,11 @@ email.setHtml("and easy to do anywhere, even with Node.js");
 sendgrid.send(email);
 
 
+//node.js reqs
 
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
+
+
 
